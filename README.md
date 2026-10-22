@@ -8,12 +8,12 @@ Home network Pi-hole project on a Raspberry Pi 4B, sitting behind a separate tri
 
 1. Install Pi-hole, give the Pi a static IP, point the router's DNS at it, and confirm ads are actually being blocked.
 2. Add security-focused blocklists (malware and phishing domains).
-3. Add CrowdSec alongside Pi-hole.
+3. Add Suricata alongside Pi-hole.
 4. Add a small status display showing ads blocked, queries today, and the Pi's static IP / hostname.
 
 Decided against Unbound and a WireGuard VPN for now in favor of the security tooling above.
 
-The Pi should only run Pi-hole plus security software (Suricata and/or CrowdSec) and light helpers like health checks. The Minecraft server goes on a separate machine.
+The Pi should only run Pi-hole plus security software (Suricata) and light helpers like health checks. The Minecraft server goes on a separate machine.
 
 ## Suricata pass rules for competitive games
 
